@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco: white;
+    --preto: black;
+}
+
+body {
+    background: url('../img/fundo.jpeg');
+}
+
+.bg-faixa {
+    background-image: url('../img/teclado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    line-height: 200px;
+    box-shadow: 3px 3px 3px var(--preto);
+}
+
+.titulo {
+    color: var(--branco);
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px var(--preto);
+    font-size: 30pt;
+}
+
+.menu {
+    box-shadow: 3px 3px 3px var(--preto);
+}
+
+.sombra {
+    box-shadow: 3px 3px 3px var(--preto);
+}
+
+.btn {
+    box-shadow: 3px 3px 3px var(--preto);
+}
+
+.direita {
+    float: right;
+}
+
+.img-total {
+    width: 100%;
+}
