@@ -1,5 +1,7 @@
-CREATE DATABASE match;
-    
+create database `match`;
+
+use `match`;
+
 CREATE TABLE tb_status(
     pk_id int not null AUTO_INCREMENT,
     txt_status VARCHAR(70),
@@ -7,7 +9,7 @@ CREATE TABLE tb_status(
     PRIMARY key(pk_id)
 ) ENGINE = INNODB;
 
-INSERT INTO `tb_usuarios` (`pk_id`, `txt_nome`, `txt_email`, `fk_id_status`, `dt_registro`) VALUES (NULL, 'Hamilton', 'adm@a.com', '1', current_timestamp());
+INSERT INTO `tb_status` (`pk_id`, `txt_status`, `dt_registro`) VALUES (NULL, 'ativado', current_timestamp()), (NULL, 'desativado', current_timestamp());
 
 CREATE TABLE tb_usuarios(
     pk_id int not null AUTO_INCREMENT,
@@ -18,6 +20,8 @@ CREATE TABLE tb_usuarios(
     PRIMARY key(pk_id),
     FOREIGN key(fk_id_status) REFERENCES tb_status(pk_id)
 ) ENGINE = INNODB;
+
+INSERT INTO `tb_usuarios` (`pk_id`, `txt_nome`, `txt_email`, `fk_id_status`, `dt_registro`) VALUES (NULL, 'Hamilton', 'adm@a.com', '1', current_timestamp());
 
 CREATE TABLE tb_cursos(
     pk_id int not null AUTO_INCREMENT,
