@@ -1,3 +1,5 @@
+CREATE DATABASE match;
+    
 CREATE TABLE tb_status(
     pk_id int not null AUTO_INCREMENT,
     txt_status VARCHAR(70),
