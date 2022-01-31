@@ -30,6 +30,7 @@
                     <a class="dropdown-item" href="<?php echo $root ?>/pages/read_alunos.php">Alunos</a>
                     <a class="dropdown-item" href="<?php echo $root ?>/pages/read_cursos.php">Cursos</a>
                     <a class="dropdown-item" href="<?php echo $root ?>/pages/read_usuarios.php">Usuários</a>
+                    <a class="dropdown-item" href="<?php echo $root ?>/pages/read_matriculas.php">Matrículas</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
